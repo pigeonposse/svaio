@@ -1,4 +1,4 @@
-import i18n                                     from '@svaio/i18n'
+// import i18n                                     from '@svaio/i18n'
 import media                                    from '@svaio/media'
 import { setDefaultMediaConfig as mediaConfig } from '@svaio/media/utils'
 import pwa                                      from '@svaio/pwa'

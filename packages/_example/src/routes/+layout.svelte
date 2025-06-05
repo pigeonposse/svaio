@@ -1,17 +1,19 @@
 <script lang="ts">
 
-	import { Seo } from '@svaio/meta'
+	import { Seo } from '@svaio/meta/svelte'
 	import { Head } from '@svaio/pwa/svelte'
-	import 'uno.css'
+	import { Utils } from '@svaio/unocss/svelte'
 
 	import Header from './Header.svelte'
 	import '../app.css'
+
 	// import * as m from '$lib/paraglide/messages.js'
 
 	let { children } = $props()
 
 </script>
 
+<Utils />
 <Seo
 	jsonld={{ schema : {
 		'@type'           : 'BreadcrumbList',
