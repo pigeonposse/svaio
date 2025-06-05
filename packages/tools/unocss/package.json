@@ -1,6 +1,6 @@
 {
 	"name": "@svaio/unocss",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "Unocss for Sveltekit with multiple Utilities",
 	"keywords": [
 		"css",
@@ -37,6 +37,10 @@
 		".": {
 			"types": "./dist/index.d.ts",
 			"import": "./dist/index.mjs"
+		},
+		"./svelte": {
+			"import": "./svelte/index.js",
+			"svelte": "./svelte/index.js"
 		},
 		"./utils": {
 			"types": "./dist/utils.d.ts",

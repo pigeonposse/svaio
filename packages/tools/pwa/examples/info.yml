@@ -1,7 +1,23 @@
-Vite:
+SIMPLE:
   title: "Simple Usage"
   data:
-    CLI:
-      input: "./vite/index.js"
+    vite:
+      input: "./simple/vite.config.js"
       title: "./vite.config.js"
+    layout:
+      input: "./simple/layout.svelte"
+      title: "./src/routes/+layout.svelte"
+ADVANCED:
+  title: Advanced Usage
+  data:
+    vite:
+      input: ./simple/vite.config.js
+      title: ./vite.config.js
+    layout:
+      input: ./advanced/layout.svelte
+      title: ./src/routes/+layout.svelte
+    types:
+      input: ./advanced/app.d.ts
+      title: ./src/app.d.ts
+      desc: Set types fot vitrual files
 

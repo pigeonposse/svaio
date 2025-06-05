@@ -1,6 +1,6 @@
 {
 	"name": "svaio",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "SvelteKit All in One Utilities, for complete, no-configuration development",
 	"keywords": [
 		"i18n",
@@ -57,6 +57,8 @@
 	},
 	"dependencies": {
 		"@svaio/i18n": "workspace:*",
+		"@svaio/media": "workspace:*",
+		"@svaio/meta": "workspace:*",
 		"@svaio/pwa": "workspace:*",
 		"@svaio/sitemap": "workspace:*",
 		"@svaio/unocss": "workspace:*"

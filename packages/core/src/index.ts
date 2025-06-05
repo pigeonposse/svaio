@@ -1,8 +1,9 @@
-import i18n    from '@svaio/i18n/vite'
-import pwa     from '@svaio/pwa'
-import sitemap from '@svaio/sitemap'
-import unocss  from '@svaio/unocss'
 
+import type i18n             from '@svaio/i18n'
+import type media            from '@svaio/media'
+import type pwa              from '@svaio/pwa'
+import type sitemap          from '@svaio/sitemap'
+import type unocss           from '@svaio/unocss'
 import type { PluginOption } from 'vite'
 
 export type Options = {
@@ -25,6 +26,11 @@ export type Options = {
 	 * Add i18n support
 	 */
 	i18n? : false | Parameters<typeof i18n>[0]
+
+	/**
+	 * Add Media support
+	 */
+	media? : false | Parameters<typeof media>[0]
 }
 
 /**
@@ -34,11 +40,16 @@ export type Options = {
  * @returns {Array}        Returns an array of plugins, filtering out any that are not enabled.
  */
 
-const vitePlugin = ( opts: Options ): PluginOption => [
-	opts.unocss && unocss( opts.unocss ),
-	opts.sitemap && sitemap( opts.sitemap ),
-	opts.pwa && pwa( opts.pwa ),
-	opts.i18n && i18n( opts.i18n ),
+const vitePlugin = async ( opts?: Options ): Promise<PluginOption> => [
+	opts?.unocss
+		? ( await import( '@svaio/unocss' ) ).default( opts.unocss )
+		: undefined,
+	opts?.sitemap && ( await import( '@svaio/sitemap' ) ).default( opts.sitemap ),
+	opts?.pwa
+		? ( await import( '@svaio/pwa' ) ).default( opts.pwa )
+		: undefined,
+	opts?.i18n && ( await import( '@svaio/i18n' ) ).default( opts.i18n ),
+	opts?.media && ( await import( '@svaio/media' ) ).default( opts.media ),
 ]
 
 export default vitePlugin

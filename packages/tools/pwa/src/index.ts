@@ -8,9 +8,11 @@ export type { Options }
 /**
  * SvelteKit PWA Plugin
  *
- * @param   {Options}      opts - An object containing configuration options for the PWA.
- * @returns {PluginOption}      The configured SvelteKit PWA plugin instance.
+ * @param   {Options}      opts - An object containing configuration options.
+ * @returns {PluginOption}      - The configured vite plugin.
  * @example
+ * ```js
+ * // ./vite.config.js
  * import pwaPlugin            from '@svaio/pwa'
  * import { setDefaultConfig } from '@svaio/pwa/config'
  * import { sveltekit }        from '@sveltejs/kit/vite'
@@ -22,8 +24,19 @@ export type { Options }
  *      sveltekit()
  *   ],
  * } )
+ * ```
+ * ```svelte
+ *
+ * <!-- src/routes/+layout.svelte -->
+ * <script>
+ *   import { pwaInfo } from 'virtual:pwa-info'
+ * </script>
+ *
+ * <svelte:head>
+ *   {@html pwaInfo ? pwaInfo.webManifest.linkTag : ''}
+ * </svelte:head>
+ * ```
  */
-
 const vitePlugin = ( opts: Options ): PluginOption =>
 	SvelteKitPWA( opts )
 

@@ -1,6 +1,6 @@
 
 import * as utils                          from '@iconify/tools'
-import { createExternalPackageIconLoader } from '@iconify/utils/lib/loader/external-pkg.cjs'
+import { createExternalPackageIconLoader } from '@iconify/utils/lib/loader/external-pkg.mjs'
 import { FileSystemIconLoader }            from '@iconify/utils/lib/loader/node-loaders'
 
 import type * as Utils from '@iconify/tools'

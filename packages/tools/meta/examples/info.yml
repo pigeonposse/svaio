@@ -1,0 +1,13 @@
+SIMPLE:
+  title: "Simple Usage"
+  desc: "**svelte-meta-tags** wrapper. [See more](https://oekazuma.github.io/svelte-meta-tags/)"
+  data:
+    meta:
+      input: "./components/meta.svelte"
+      desc: "See more: https://oekazuma.github.io/svelte-meta-tags/meta-tags-properties/"
+      title: "Meta tags (opengraph, facebook, twiiter etc)"
+    JSONLD:
+      input: "./components/jsonld.svelte"
+      desc: "See more: https://oekazuma.github.io/svelte-meta-tags/json-ld/"
+      title: "JSON LD Schemas"
+

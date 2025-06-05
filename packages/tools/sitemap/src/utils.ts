@@ -9,7 +9,7 @@ export type DefaultConfig = {
 	/**
 	 * Output directory for the build files.
 	 *
-	 * @default 'dist/web'
+	 * @default '.svelte-kit/output/client'
 	 */
 	outDir?   : string
 	/**
@@ -21,8 +21,8 @@ export type DefaultConfig = {
 }
 
 export const setDefaultConfig = ( opts?: DefaultConfig ): Options => ( {
-	outDir   : opts?.outDir || 'dist/web',
-	hostname : opts?.hostname,
+	outDir   : opts?.outDir || '.svelte-kit/output/client',
+	hostname : opts?.hostname || 'http://localhost/',
 	exclude  : opts?.exclude,
 	robots   : [
 		{

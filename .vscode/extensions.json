@@ -7,5 +7,6 @@
 		"christian-kohler.npm-intellisense",
 		"redhat.vscode-yaml",
 		"github.vscode-github-actions",
+		"antfu.unocss",
 	]
 }

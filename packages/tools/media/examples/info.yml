@@ -1,0 +1,26 @@
+enhanced:
+  title: "Enhance Usage"
+  data:
+    vite:
+      input: "./enhanced/vite.config.ts"
+      title: "./vite.config.js"
+    dts:
+      input: "./enhanced/app.d.ts"
+      title: "./src/app.d.ts"
+    page:
+      input: "./enhanced/page.svelte"
+      title: "./src/*.svelte"
+
+create:
+  title: "Create Images Usage"
+  data:
+    vite:
+      input: "./create/vite.config.ts"
+      title: "./vite.config.js"
+    page:
+      input: "./create/page.svelte"
+      title: "./src/*.svelte"
+    experimental:
+      input: ./create/experimental.svelte
+      title: "Experimetal usage"
+

@@ -1,0 +1,78 @@
+{
+	"name": "@svaio/media",
+	"version": "0.0.3",
+	"description": "Media utilities for SvelteKit",
+	"keywords": [
+		"compress",
+		"image",
+		"manifest",
+		"media",
+		"pigeonposse",
+		"pp",
+		"sv",
+		"svelte",
+		"sveltekit",
+		"toolkit",
+		"vite",
+		"vite-plugin"
+	],
+	"homepage": "https://svaio.pigeonposse.com/guide/media",
+	"bugs": {
+		"url": "https://github.com/pigeonposse/svaio/issues",
+		"email": "dev@pigeonposse.com"
+	},
+	"repository": {
+		"type": "https",
+		"url": "https://github.com/pigeonposse/svaio/",
+		"directory": "packages/media"
+	},
+	"funding": {
+		"type": "individual",
+		"url": "https://pigeonposse.com/contribute"
+	},
+	"license": "GPL-3.0",
+	"author": {
+		"name": "Angelo",
+		"email": "angelo@pigeonposse.com",
+		"url": "https://github.com/angelespejo"
+	},
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.mjs"
+		},
+		"./svelte": {
+			"types": "./dist/svelte.d.ts",
+			"import": "./dist/svelte.mjs"
+		},
+		"./types": "./types/index.d.ts",
+		"./utils": {
+			"types": "./dist/utils.d.ts",
+			"import": "./dist/utils.mjs"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "unbuild",
+		"example": "pnpm dlx tsx src/create/core.example.ts"
+	},
+	"dependencies": {
+		"@resvg/resvg-js": "2.6.2",
+		"@sveltejs/enhanced-img": "0.6.0",
+		"satori": "0.13.2",
+		"satori-html": "0.3.2"
+	},
+	"devDependencies": {
+		"@svaio/repo-config": "workspace:*"
+	},
+	"peerDependencies": {
+		"vite": ">=2.0.0"
+	},
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org/"
+	}
+}

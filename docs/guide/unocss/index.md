@@ -1,6 +1,6 @@
 # @svaio/unocss
 
-
+Unocss for Sveltekit with multiple Utilities
 
 ::: code-group
 
@@ -28,4 +28,5 @@ deno add @svaio/unocss
 
 ## ➕ More
 
+- 💡 [Examples](examples.md)
 - 📦 [NPM](https://www.npmjs.com/package/@svaio/unocss)

@@ -24,7 +24,7 @@ export type { Options }
  *   ],
  * } )
  */
-const vitePlugin = ( opts: Options ): PluginOption =>
+const vitePlugin = ( opts?: Options ): PluginOption =>
 	sitemap( opts )
 
 export default vitePlugin

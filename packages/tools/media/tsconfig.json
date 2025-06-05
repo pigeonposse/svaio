@@ -1,0 +1,3 @@
+{
+	"extends": "./node_modules/@svaio/repo-config/tsconfig.json",
+}

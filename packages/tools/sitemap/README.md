@@ -12,7 +12,7 @@
 [![License](https://img.shields.io/github/license/pigeonposse/svaio?style=for-the-badge&color=green&logoColor=white)](/LICENSE)
 [![Version](https://img.shields.io/npm/v/svaio?style=for-the-badge&color=blue&label=Version)](https://www.npmjs.com/package/svaio)
 [![NPM package minimized gzipped size](https://img.shields.io/bundlejs/size/@svaio/sitemap?style=for-the-badge&color=orange&label=Minimized+size&logoColor=white)](https://www.npmjs.com/package/@svaio/sitemap)
-[![NPM Unpacked Size](https://img.shields.io/npm/unpacked-size/@svaio/sitemap/0.0.1?style=for-the-badge&color=orange&logoColor=white)](https://www.npmjs.com/package/@svaio/sitemap)
+[![NPM Unpacked Size](https://img.shields.io/npm/unpacked-size/@svaio/sitemap/0.0.2?style=for-the-badge&color=orange&logoColor=white)](https://www.npmjs.com/package/@svaio/sitemap)
 
 Zero-config Sitemap plugin for Vite and Sveltekit
 
@@ -45,8 +45,10 @@ deno add @svaio/sitemap
 ## ➕ More
 
 - 🌞 [Core](https://svaio.pigeonposse.com/guide/core)
-- [I18n](https://svaio.pigeonposse.com/guide/i18n)
+- 🎥 [Media](https://svaio.pigeonposse.com/guide/media)
+- [Meta](https://svaio.pigeonposse.com/guide/meta)
 - [Pwa](https://svaio.pigeonposse.com/guide/pwa)
+- [I18n](https://svaio.pigeonposse.com/guide/i18n)
 - [Sitemap](https://svaio.pigeonposse.com/guide/sitemap)
 - [Unocss](https://svaio.pigeonposse.com/guide/unocss)
 

@@ -1,0 +1,15 @@
+"Simple Usage":
+  data:
+    "vite.config.js":
+      input: "./simple/vite.config.js"
+    "layout":
+      title: "src/routes/+layout.svelte"
+      input: ./simple/layout.svelte
+
+"Manual Usage":
+  data:
+    "vite.config.js":
+      input: "./simple/vite.config.js"
+    "layout":
+      title: "src/routes/+layout.svelte"
+      input: ./manual/layout.svelte

@@ -28,4 +28,5 @@ deno add @svaio/i18n
 
 ## ➕ More
 
+- 💡 [Examples](examples.md)
 - 📦 [NPM](https://www.npmjs.com/package/@svaio/i18n)

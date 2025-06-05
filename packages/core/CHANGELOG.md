@@ -1,5 +1,18 @@
 # svaio
 
+## 0.0.3
+
+### Patch Changes
+
+- Add examples, fix issues, prepare beta
+- Updated dependencies
+  - @svaio/sitemap@0.0.3
+  - @svaio/unocss@0.0.3
+  - @svaio/i18n@0.0.3
+  - @svaio/pwa@0.0.3
+  - @svaio/media@0.0.3
+  - @svaio/meta@0.0.3
+
 ## 0.0.2
 
 ### Patch Changes

@@ -1,5 +1,4 @@
-
-import unoCSS           from 'unocss/vite'
+import unocss           from 'unocss/vite'
 import { PluginOption } from 'vite'
 
 import { Options } from './types'
@@ -13,18 +12,28 @@ export type { Options }
  * @param   {Options<Theme>}        opts - An object containing configuration options for UnoCSS.
  * @returns {import('vite').Plugin}      The configured UnoCSS plugin instance.
  * @example
+ * ```js
+ * // ./vite.config.js
  * import { defineConfig } from 'vite'
- * import vitePlugin from '@svaio/unocss'
+ * import unocss from '@svaio/unocss'
  *
  * export default defineConfig( {
  *   plugins: [
- *      vitePlugin( {
+ *      unocss( {
  *        // Your UnoCSS configuration here.
  *      } ),
  *   ],
  * } )
+ * ```
+ * ```svelte
+ *
+ * <!-- src/routes/+layout.svelte -->
+ * <script>
+ *    import 'uno.css'
+ * </script>
+ * ```
  */
-const vitePlugin = <Theme extends object>( opts: Options<Theme> ): PluginOption =>
-	unoCSS<Theme>( opts )
+const vitePlugin = <Theme extends object>( opts?: Options<Theme> ): PluginOption =>
+	unocss<Theme>( opts )
 
 export default vitePlugin
