@@ -1,6 +1,6 @@
 {
 	"name": "svaio",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"description": "SvelteKit All in One Utilities, for complete, no-configuration development",
 	"keywords": [
 		"i18n",

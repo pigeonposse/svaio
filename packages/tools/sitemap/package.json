@@ -1,6 +1,6 @@
 {
 	"name": "@svaio/sitemap",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"description": "Zero-config Sitemap plugin for Vite and Sveltekit",
 	"keywords": [
 		"pigeonposse",
@@ -47,8 +47,7 @@
 	"main": "./dist/index.mjs",
 	"module": "./dist/index.mjs",
 	"files": [
-		"dist",
-		"svelte"
+		"dist"
 	],
 	"scripts": {
 		"build": "unbuild"

@@ -2,6 +2,9 @@
 	"$schema": "https://unpkg.com/@changesets/config/schema.json",
 	"commit": false,
 	"fixed": [
+		[
+			"*svaio*"
+		]
 	],
 	"linked": [
 	],

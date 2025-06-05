@@ -1,6 +1,6 @@
 {
 	"name": "@svaio/media",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"description": "Media utilities for SvelteKit",
 	"keywords": [
 		"compress",
@@ -43,8 +43,9 @@
 			"import": "./dist/index.mjs"
 		},
 		"./svelte": {
-			"types": "./dist/svelte.d.ts",
-			"import": "./dist/svelte.mjs"
+			"types": "./dist/svelte/index.d.ts",
+			"svelte": "./dist/svelte/index.js",
+			"import": "./dist/svelte/index.js"
 		},
 		"./types": "./types/index.d.ts",
 		"./utils": {
@@ -56,11 +57,12 @@
 	"module": "./dist/index.mjs",
 	"files": [
 		"dist",
-		"svelte",
 		"types"
 	],
 	"scripts": {
-		"build": "unbuild",
+		"build": "pnpm build-lib && pnpm build-svelte",
+		"build-lib": "unbuild",
+		"build-svelte": "svelte-package -i ./svelte -o ./dist/svelte -t /dist/svelte",
 		"example": "pnpm dlx tsx src/create/core.example.ts"
 	},
 	"dependencies": {
@@ -73,6 +75,7 @@
 		"@svaio/repo-config": "workspace:*"
 	},
 	"peerDependencies": {
+		"svelte": "^5",
 		"vite": ">=2.0.0"
 	},
 	"publishConfig": {
