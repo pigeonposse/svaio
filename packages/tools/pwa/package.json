@@ -1,6 +1,6 @@
 {
 	"name": "@svaio/pwa",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"description": "Zero-config Progressive Web App plugin for Vite and Sveltekit",
 	"keywords": [
 		"browser-manifest",

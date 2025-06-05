@@ -1,5 +1,18 @@
 # svaio
 
+## 0.0.6
+
+### Patch Changes
+
+- add types
+- Updated dependencies
+  - @svaio/media@0.0.6
+  - @svaio/i18n@0.0.5
+  - @svaio/meta@0.0.6
+  - @svaio/pwa@0.0.6
+  - @svaio/sitemap@0.0.6
+  - @svaio/unocss@0.0.6
+
 ## 0.0.5
 
 ### Patch Changes

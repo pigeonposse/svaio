@@ -1,6 +1,6 @@
 {
 	"name": "@svaio/meta",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"description": "Zero-config Meta plugin for Sveltekit (seo, meta tags, opengraph, jsondl...)",
 	"keywords": [
 		"json-ld",

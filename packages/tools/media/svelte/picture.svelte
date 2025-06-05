@@ -1,10 +1,10 @@
 <script lang="ts">
 
-	import { HTMLImgAttributes } from 'svelte/elements'
+	import type { PictureProps } from './types'
 
 	let {
 		src, ...rest
-	}: HTMLImgAttributes & { src: string } = $props()
+	}: PictureProps = $props()
 
 </script>
 
