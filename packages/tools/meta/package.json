@@ -1,6 +1,6 @@
 {
 	"name": "@svaio/meta",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "Zero-config Meta plugin for Sveltekit (seo, meta tags, opengraph, jsondl...)",
 	"keywords": [
 		"json-ld",
@@ -38,10 +38,16 @@
 	"type": "module",
 	"exports": {
 		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.mjs"
+		},
+		"./svelte": {
 			"import": "./svelte/index.js",
 			"svelte": "./svelte/index.js"
 		}
 	},
+	"main": "./dist/index.mjs",
+	"module": "./dist/index.mjs",
 	"files": [
 		"dist",
 		"svelte"

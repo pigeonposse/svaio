@@ -1,6 +1,6 @@
 {
 	"name": "@svaio/pwa",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "Zero-config Progressive Web App plugin for Vite and Sveltekit",
 	"keywords": [
 		"browser-manifest",
@@ -52,6 +52,8 @@
 			"import": "./dist/utils.mjs"
 		}
 	},
+	"main": "./dist/index.mjs",
+	"module": "./dist/index.mjs",
 	"files": [
 		"dist",
 		"svelte"
