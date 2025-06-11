@@ -7,6 +7,8 @@ import {
 import { generateSitemap } from 'sitemap-ts'
 import { PluginOption }    from 'vite'
 
+import { logger } from '../../_shared/log'
+
 import type { Options } from './types'
 
 const existsDir = async ( path: string ): Promise<boolean> => {
@@ -41,6 +43,8 @@ const ensureDir = async ( path: string ) => {
 	}
 
 }
+const PLUGIN_ID = 'svaio-sitemap'
+const log       = logger( PLUGIN_ID )
 
 /**
  * Sitemap plugin for Vite and SvelteKit.
@@ -62,11 +66,25 @@ const ensureDir = async ( path: string ) => {
  * } )
  */
 const vitePlugin = ( opts?: Options ): PluginOption => ( {
-	name : 'vite-plugin-sitemap',
+	name : PLUGIN_ID,
 	async closeBundle() {
 
-		await ensureDir( opts?.outDir || '.svelte-kit/output/client' )
-		generateSitemap( opts )
+		try {
+
+			const outDir = opts?.outDir || '.svelte-kit/output/client'
+			await ensureDir( outDir )
+			generateSitemap( {
+				outDir,
+				...opts,
+			} )
+			log.success( 'Sitemap created successfully! at: ' + outDir )
+
+		}
+		catch ( error ) {
+
+			log.error( error )
+
+		}
 
 	},
 	transformIndexHtml() {

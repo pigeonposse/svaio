@@ -8,6 +8,7 @@ import {
 } from './const'
 import { createImages } from './core'
 import { Options }      from './types'
+import { logger }       from '../../../_shared/log'
 
 import type {
 	PluginOption,
@@ -28,8 +29,7 @@ export type VitePlugin = Options & {
 	devMode? : boolean
 }
 
-const msg = ( m: string, p?:string ) => ( p ? `${p} ` : '' ) + `[${PLUGIN_ID}] ${m}`
-
+const log        = logger( PLUGIN_ID )
 const vitePlugin = ( opts?: VitePlugin ): PluginOption => {
 
 	let config: ResolvedConfig
@@ -40,12 +40,12 @@ const vitePlugin = ( opts?: VitePlugin ): PluginOption => {
 			try {
 
 				if ( !opts ) return
-				if ( opts.devMode && config.command === 'serve' ) console.log( msg( 'Dev mode activated', 'ℹ' ) )
+				if ( opts.devMode && config.command === 'serve' ) log.info( 'Dev mode activated' )
 
 				if ( opts.devMode || ( !opts.devMode && config.command === 'build' ) ) {
 
 					await createImages( opts )
-					console.log( msg( 'Create images succesfully!', '🎉' ) )
+					log.success( 'Create images succesfully!' )
 
 				}
 
@@ -53,7 +53,7 @@ const vitePlugin = ( opts?: VitePlugin ): PluginOption => {
 			catch ( e ) {
 
 				const message = e instanceof Error ? e.message : 'Unexpected error'
-				const error   = msg( message, '⚠️' )
+				const error   = log.formats.warn( message )
 				if ( opts?.throw ) throw error
 				else console.warn( error )
 

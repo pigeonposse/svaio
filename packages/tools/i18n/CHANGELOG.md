@@ -1,5 +1,11 @@
 # @svaio/i18n
 
+## 0.0.7
+
+### Patch Changes
+
+- Add ensure dir function to sitemap plugin
+
 ## 0.0.6
 
 ### Patch Changes
