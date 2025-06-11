@@ -1,4 +1,12 @@
-import sitemap from 'vite-plugin-sitemap'
+/* eslint-disable @stylistic/object-curly-newline */
+import type { UserOptions } from 'sitemap-ts'
 
-export type Options = NonNullable<Parameters<typeof sitemap>[0]>
+export type Options = Omit<UserOptions, 'outDir'> & {
+	/**
+	 * Output directory for the build files.
+	 *
+	 * @default '.svelte-kit/output/client'
+	 */
+	outDir? : string
+}
 

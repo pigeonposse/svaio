@@ -1,5 +1,18 @@
 # svaio
 
+## 0.0.7
+
+### Patch Changes
+
+- Add ensure dir function to sitemap plugin
+- Updated dependencies
+  - @svaio/sitemap@0.0.7
+  - @svaio/i18n@0.0.6
+  - @svaio/media@0.0.7
+  - @svaio/meta@0.0.7
+  - @svaio/pwa@0.0.7
+  - @svaio/unocss@0.0.7
+
 ## 0.0.6
 
 ### Patch Changes

@@ -1,6 +1,6 @@
 {
 	"name": "@svaio/sitemap",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"description": "Zero-config Sitemap plugin for Vite and Sveltekit",
 	"keywords": [
 		"pigeonposse",
@@ -53,7 +53,7 @@
 		"build": "unbuild"
 	},
 	"dependencies": {
-		"vite-plugin-sitemap": "0.8.2"
+		"sitemap-ts": "1.9.0"
 	},
 	"devDependencies": {
 		"@svaio/repo-config": "workspace:*"
