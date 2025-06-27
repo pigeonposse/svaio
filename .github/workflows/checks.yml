@@ -180,7 +180,7 @@ jobs:
         run: pnpm . gh info update
         continue-on-error: true
         env:
-          GITHUB_TOKEN: ${{ env.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_API_TOKEN }}
 
       - name: 📚🐙😺➡️ Call to workflow for deploy Documentation
         if: steps.updated.outputs.core_version != ''
