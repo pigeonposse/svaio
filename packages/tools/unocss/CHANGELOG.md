@@ -1,5 +1,11 @@
 # @svaio/unocss
 
+## 0.0.10
+
+### Patch Changes
+
+- up ci
+
 ## 0.0.9
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @dovenv/repo-config
 
+## 0.0.9
+
+### Patch Changes
+
+- up ci
+
 ## 0.0.8
 
 ### Patch Changes

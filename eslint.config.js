@@ -24,6 +24,7 @@ export default setConfig(
 			'**/.dovenv/**/templates/*',
 			'**/packages/create/data/**',
 			'**/packages/config/**/tests/**',
+			
 		],
 	},
 	async c => ( [ ...c, ...( await setSvelteConfig( { ts: true } ) ) ] ),

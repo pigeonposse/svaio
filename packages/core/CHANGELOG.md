@@ -1,5 +1,18 @@
 # svaio
 
+## 0.0.10
+
+### Patch Changes
+
+- up ci
+- Updated dependencies
+  - @svaio/i18n@0.0.10
+  - @svaio/media@0.0.10
+  - @svaio/meta@0.0.10
+  - @svaio/pwa@0.0.10
+  - @svaio/sitemap@0.0.10
+  - @svaio/unocss@0.0.10
+
 ## 0.0.9
 
 ### Patch Changes
