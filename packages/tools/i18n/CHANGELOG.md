@@ -1,5 +1,11 @@
 # @svaio/i18n
 
+## 0.0.9
+
+### Patch Changes
+
+- up docs
+
 ## 0.0.8
 
 ### Patch Changes

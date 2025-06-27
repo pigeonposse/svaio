@@ -150,6 +150,9 @@ jobs:
           echo Set changesets outputs
           echo '${{ toJSON(steps.changesets.outputs) }}'
           echo Set updated versions
+          echo "library_id=$library_id" 
+          echo "core_version=$core_version"
+          echo "core_version_major=$core_version_major"
           echo "core_version=$core_version" >> $GITHUB_OUTPUT
           echo "core_version_major=$core_version_major" >> $GITHUB_OUTPUT
 
