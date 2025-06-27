@@ -7,12 +7,12 @@
 [![Instagram](https://img.shields.io/badge/Instagram-black?style=for-the-badge&logoColor=white&logo=instagram)](https://www.instagram.com/pigeon.posse/)
 [![Medium](https://img.shields.io/badge/Medium-black?style=for-the-badge&logoColor=white&logo=medium)](https://medium.com/@pigeonposse)
 
-
+[![BANNER](https://github.com/pigeonposse/svaio/blob/main/docs/public/banner.png?raw=true)](https://svaio.pigeonposse.com/guide/core)
 
 [![License](https://img.shields.io/github/license/pigeonposse/svaio?style=for-the-badge&color=green&logoColor=white)](/LICENSE)
 [![Version](https://img.shields.io/npm/v/svaio?style=for-the-badge&color=blue&label=Version)](https://www.npmjs.com/package/svaio)
 [![NPM package minimized gzipped size](https://img.shields.io/bundlejs/size/svaio?style=for-the-badge&color=orange&label=Minimized+size&logoColor=white)](https://www.npmjs.com/package/svaio)
-[![NPM Unpacked Size](https://img.shields.io/npm/unpacked-size/svaio/0.0.2?style=for-the-badge&color=orange&logoColor=white)](https://www.npmjs.com/package/svaio)
+[![NPM Unpacked Size](https://img.shields.io/npm/unpacked-size/svaio/0.0.8?style=for-the-badge&color=orange&logoColor=white)](https://www.npmjs.com/package/svaio)
 
 SvelteKit All in One Utilities, for complete, no-configuration development
 
@@ -52,10 +52,10 @@ deno add svaio
 ## ➕ More
 
 - 🌞 [Core](https://svaio.pigeonposse.com/guide/core)
+- [I18n](https://svaio.pigeonposse.com/guide/i18n)
 - 🎥 [Media](https://svaio.pigeonposse.com/guide/media)
 - [Meta](https://svaio.pigeonposse.com/guide/meta)
 - [Pwa](https://svaio.pigeonposse.com/guide/pwa)
-- [I18n](https://svaio.pigeonposse.com/guide/i18n)
 - [Sitemap](https://svaio.pigeonposse.com/guide/sitemap)
 - [Unocss](https://svaio.pigeonposse.com/guide/unocss)
 
