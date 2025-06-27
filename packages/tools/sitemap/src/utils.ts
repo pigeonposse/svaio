@@ -27,6 +27,7 @@ export const setDefaultConfig = ( opts?: DefaultConfig ): Options => ( {
 	robots   : [
 		{
 			userAgent : '*',
+			allow     : '/',
 			disallow  : opts?.exclude,
 		},
 	],

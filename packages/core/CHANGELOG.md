@@ -1,5 +1,18 @@
 # svaio
 
+## 0.0.8
+
+### Patch Changes
+
+- update deps
+- Updated dependencies
+  - @svaio/sitemap@0.0.8
+  - @svaio/unocss@0.0.8
+  - @svaio/media@0.0.8
+  - @svaio/i18n@0.0.8
+  - @svaio/meta@0.0.8
+  - @svaio/pwa@0.0.8
+
 ## 0.0.7
 
 ### Patch Changes

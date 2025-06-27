@@ -180,5 +180,8 @@ jobs:
         with:
           workflow: release-docs.yml
         continue-on-error: true
-
+      - name: 📚🐙😺➡️ Call to workflow for update API docs 
+        if: steps.updated.outputs.core_version != ''
+        uses: pigeonposse/pigeon-web/.github/workflows/2025-api.yml@main
+        continue-on-error: true
 ###############################################################################

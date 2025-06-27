@@ -1,5 +1,11 @@
 # @svaio/i18n
 
+## 0.0.8
+
+### Patch Changes
+
+- update deps
+
 ## 0.0.7
 
 ### Patch Changes

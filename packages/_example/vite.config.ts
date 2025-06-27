@@ -34,15 +34,15 @@ export default defineConfig( { plugins : [
 			} ) },
 		},
 	} ),
-	sitemap( sitemapConfig( ) ),
-	pwa( pwaConfig( {
-		name        : 'Example APP',
-		description : 'Example app desc',
-	} ) ),
 	unocss( {
 		presets      : [ presetWind3() ],
 		extractors   : [ extractorSvelte() ],
 		transformers : [ transformerDirectives() ],
 	} ),
 	sveltekit(),
+	sitemap( sitemapConfig( ) ),
+	pwa( pwaConfig( {
+		name        : 'Example APP',
+		description : 'Example app desc',
+	} ) ),
 ] } )

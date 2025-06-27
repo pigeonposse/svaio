@@ -1,6 +1,6 @@
 {
 	"name": "@svaio/media",
-	"version": "0.0.7",
+	"version": "0.0.8",
 	"description": "Media utilities for SvelteKit",
 	"keywords": [
 		"compress",
@@ -67,8 +67,8 @@
 	},
 	"dependencies": {
 		"@resvg/resvg-js": "2.6.2",
-		"@sveltejs/enhanced-img": "0.6.0",
-		"satori": "0.13.2",
+		"@sveltejs/enhanced-img": "0.6.1",
+		"satori": "0.15.2",
 		"satori-html": "0.3.2"
 	},
 	"devDependencies": {

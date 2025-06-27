@@ -1,6 +1,6 @@
 {
 	"name": "@svaio/i18n",
-	"version": "0.0.7",
+	"version": "0.0.8",
 	"description": "Zero-config i18n plugin for Vite and Sveltekit",
 	"keywords": [
 		"i18n",
@@ -54,7 +54,7 @@
 		"build": "unbuild"
 	},
 	"dependencies": {
-		"@inlang/paraglide-sveltekit": "0.16.1"
+		"@inlang/paraglide-js": "2.1.0"
 	},
 	"devDependencies": {
 		"@svaio/repo-config": "workspace:*"
