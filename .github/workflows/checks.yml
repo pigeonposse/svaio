@@ -23,6 +23,8 @@ env:
 jobs:
   checks:
     runs-on: ubuntu-latest
+    outputs:
+      core_version: ${{ steps.updated.outputs.core_version }}
     steps:
 
       #########################################################################
@@ -180,8 +182,10 @@ jobs:
         with:
           workflow: release-docs.yml
         continue-on-error: true
-      - name: 📚🐙😺➡️ Call to workflow for update API docs 
-        if: steps.updated.outputs.core_version != ''
-        uses: pigeonposse/pigeon-web/.github/workflows/2025-api.yml@main
-        continue-on-error: true
+  update-api-docs:
+    name: 📚🐙😺➡️ Call to workflow for update API docs
+    needs: checks
+    if: needs.checks.outputs.core_version != ''
+    uses: pigeonposse/pigeon-web/.github/workflows/2025-api.yml@main
+
 ###############################################################################
